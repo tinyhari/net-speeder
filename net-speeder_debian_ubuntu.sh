@@ -4,11 +4,6 @@ if [ $(id -u) != "0" ]; then
     printf "错误：你必须以root的身份来运行此脚本！\n"
     exit 1
 fi
-
-echo "=========================================================================\n"
-printf "Auto install net-speeder on your vps,written by tennfy \n"
-printf "Version 0.1 \n"
-
 apt-get update
 apt-get install libnet1 libpcap0.8 
 apt-get install libnet1-dev libpcap0.8-dev
